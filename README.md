@@ -75,21 +75,21 @@ To demonstrate browser-based offline/local parsing workflows without local CLI i
 ### Step-by-Step Execution:
 1. **Hash Extraction via Networkwalks Hash Calculator:**
    * Accessed the [Networkwalks Hash Calculator](https://networkwalks.com/hash-calculator/).
-   * <img width="1365" height="767" alt="00_Calculator_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/00_Calculator_hash.png" />
+   * <img width="1365" height="767" alt="00_Calculator_hash"https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/00_calculator_hash.png" />
 
    * Uploaded the encrypted file `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf`, which parsed the file locally in the browser and generated the `pdf2john`/`hashcat`-compatible `$pdf$...` hash string.
-   * <img width="1365" height="766" alt="01_find_file" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/01_find_file.png" />
+   * <img width="1365" height="766" alt="01_find_file" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/02_pdf_hash.png" />
 
    * Copied the complete hash value.
    * <img width="1364" height="761" alt="02_pdf_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/02_pdf_hash.png" />
 
 2. **Dictionary Attack via Networkwalks Password Cracker:**
    * Opened the [Networkwalks Password Cracker](https://networkwalks.com/password-cracker/).
-   * <img width="1365" height="765" alt="03_password_cracking" src="" />
+   * <img width="1365" height="765" alt="03_password_cracking" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/03_pasword_cracking.png" />
 
    * Pasted the extracted `$pdf$...` hash into the **PDF HASH** input field.
    * Selected the **Built-in list** wordlist and clicked **START CRACKING**.
-   * <img width="1365" height="767" alt="04_result" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/03_password_cracking.png" />
+   * <img width="1365" height="767" alt="04_result" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/04_password_result.png" />
 
 3. **Document Unlocking & Flag Capture:**
    * Once the dictionary attack succeeded, used the recovered password to unlock the protected PDF document.
@@ -97,7 +97,7 @@ To demonstrate browser-based offline/local parsing workflows without local CLI i
      ```text
      nw{networkwalks_flag1_jtr_270521_1}
      ```
-     <img width="1365" height="766" alt="05_password_result" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/04_result.png" />
+     <img width="1365" height="766" alt="05_password_result" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/05_result.png" />
 
     
 
