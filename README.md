@@ -39,30 +39,30 @@ Password cracking is the process of recovering a plaintext password from stored 
 ### Step-by-Step Execution:
 1. **Engine Setup & Configuration:**
    * Installed **Johnny GUI** alongside the **John the Ripper (Jumbo CLI)** distribution.
-   * <img width="1365" height="763" alt="00_Johnny" src="" />
+   * <img width="1365" height="763" alt="00_Johnny" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/00_Johnny.png" />
 
    * Linked Johnny to the core executable binary (`john.exe` inside the `/run` directory) to enable local hash processing.
-   * <img width="1365" height="763" alt="02_john_exe" src="" />
+   * <img width="1365" height="763" alt="02_john_exe" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/02_john_exe.png" />
 
 
 1. **PDF Hash Extraction:**
-   * Extracted the cryptographic hash string from the encrypted target document (`My Locked PDF1.pdf`) using a `pdf2john`-compatible extractor, generating a string starting with `$pdf$4*4*128*...`.
-   * <img width="1365" height="763" alt="04_locked_pdf1" src="" />
-   * <img width="1365" height="763" alt="05_hash" src="" />
+   * Extracted the cryptographic hash string from the encrypted target document (`My Locked PDF3.pdf`) using a `pdf2john`-compatible extractor, generating a string starting with `$pdf$4*4*128*...`.
+   * <img width="1365" height="763" alt="04_locked_pdf1" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/04_loked_pdf1.png" />
+   * <img width="1365" height="763" alt="05_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/05_hash.png" />
 
    * Saved the extracted hash string into a plain text file named `hash1.txt`.
-   * <img width="1365" height="763" alt="07_file_hash" src="" />
+   * <img width="1365" height="763" alt="07_file_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/07_file_hash.png" />
 
 
 2. **Executing the Attack in Johnny:**
    * Loaded `hash1.txt` into Johnny via **Open password file** (`PASSWD` format).
-   * <img width="1365" height="763" alt="06_passwd" src="" />
+   * <img width="1365" height="763" alt="06_passwd" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/06_passwd.png" />
 
    * Initiated the cracking session by clicking **Start new attack**.
 3. **Result & Verification:**
    * John the Ripper successfully matched the hash against its wordlist and recovered the plaintext password: `good-luck`.
-   * <img width="1365" height="763" alt="08_password_result" src="" />
-     <img width="1365" height="763" alt="09_congratulations" src="" />
+   * <img width="1365" height="763" alt="08_password_result" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/08_password_result.png" />
+     <img width="1365" height="763" alt="09_congratulations" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/09_congratulation.png" />
 
 
 
@@ -75,13 +75,13 @@ To demonstrate browser-based offline/local parsing workflows without local CLI i
 ### Step-by-Step Execution:
 1. **Hash Extraction via Networkwalks Hash Calculator:**
    * Accessed the [Networkwalks Hash Calculator](https://networkwalks.com/hash-calculator/).
-   * <img width="1365" height="767" alt="00_Calculator_hash" src="" />
+   * <img width="1365" height="767" alt="00_Calculator_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/00_Calculator_hash.png" />
 
    * Uploaded the encrypted file `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf`, which parsed the file locally in the browser and generated the `pdf2john`/`hashcat`-compatible `$pdf$...` hash string.
-   * <img width="1365" height="766" alt="01_find_file" src="" />
+   * <img width="1365" height="766" alt="01_find_file" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/01_find_file.png" />
 
    * Copied the complete hash value.
-   * <img width="1364" height="761" alt="02_pdf_hash" src="" />
+   * <img width="1364" height="761" alt="02_pdf_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/02_pdf_hash.png" />
 
 2. **Dictionary Attack via Networkwalks Password Cracker:**
    * Opened the [Networkwalks Password Cracker](https://networkwalks.com/password-cracker/).
@@ -89,7 +89,7 @@ To demonstrate browser-based offline/local parsing workflows without local CLI i
 
    * Pasted the extracted `$pdf$...` hash into the **PDF HASH** input field.
    * Selected the **Built-in list** wordlist and clicked **START CRACKING**.
-   * <img width="1365" height="767" alt="04_result" src="" />
+   * <img width="1365" height="767" alt="04_result" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/03_password_cracking.png" />
 
 3. **Document Unlocking & Flag Capture:**
    * Once the dictionary attack succeeded, used the recovered password to unlock the protected PDF document.
@@ -97,7 +97,7 @@ To demonstrate browser-based offline/local parsing workflows without local CLI i
      ```text
      nw{networkwalks_flag1_jtr_270521_1}
      ```
-     <img width="1365" height="766" alt="05_password_result" src="" />
+     <img width="1365" height="766" alt="05_password_result" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/04_result.png" />
 
     
 
