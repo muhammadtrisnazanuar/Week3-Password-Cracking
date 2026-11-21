@@ -51,7 +51,7 @@ Password cracking is the process of recovering a plaintext password from stored 
    * <img width="1365" height="763" alt="05_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/05_hash.png" />
 
    * Saved the extracted hash string into a plain text file named `hash1.txt`.
-   * <img width="1365" height="763" alt="07_file_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/07_file_hash.png" />
+   * <img width="1365" height="763" alt="07_file_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/02_pdf_hash.png" />
 
 
 2. **Executing the Attack in Johnny:**
