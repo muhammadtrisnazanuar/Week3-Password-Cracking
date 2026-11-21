@@ -46,9 +46,9 @@ Password cracking is the process of recovering a plaintext password from stored 
 
 
 1. **PDF Hash Extraction:**
-   * Extracted the cryptographic hash string from the encrypted target document (`My Locked PDF3.pdf`) using a `pdf2john`-compatible extractor, generating a string starting with `$pdf$4*4*128*...`.
-   * <img width="1365" height="763" alt="04_locked_pdf1" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/04_loked_pdf1.png" />
-   * <img width="1365" height="763" alt="05_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM1/05_hash.png" />
+   * Extracted the cryptographic hash string from the encrypted target document (`My Locked PDF1.pdf`) using a `pdf2john`-compatible extractor, generating a string starting with `$pdf$4*4*128*...`.
+   * <img width="1365" height="763" alt="04_locked_pdf1" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/00_calculator_hash.png" />
+   * <img width="1365" height="763" alt="05_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/01_find_file.png" />
 
    * Saved the extracted hash string into a plain text file named `hash1.txt`.
    * <img width="1365" height="763" alt="07_file_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/02_pdf_hash.png" />
