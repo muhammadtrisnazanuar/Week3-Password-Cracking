@@ -75,10 +75,10 @@ To demonstrate browser-based offline/local parsing workflows without local CLI i
 ### Step-by-Step Execution:
 1. **Hash Extraction via Networkwalks Hash Calculator:**
    * Accessed the [Networkwalks Hash Calculator](https://networkwalks.com/hash-calculator/).
-   * <img width="1365" height="767" alt="00_Calculator_hash"https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/00_calculator_hash.png" />
+   * <img width="1365" height="767" alt="00_Calculator_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/00_calculator_hash.png" />
 
    * Uploaded the encrypted file `My Locked PDF1 (for NW Tools Lab WK3-PM2).pdf`, which parsed the file locally in the browser and generated the `pdf2john`/`hashcat`-compatible `$pdf$...` hash string.
-   * <img width="1365" height="766" alt="01_find_file" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/02_pdf_hash.png" />
+   * <img width="1365" height="766" alt="01_find_file" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/01_find_file.png" />
 
    * Copied the complete hash value.
    * <img width="1364" height="761" alt="02_pdf_hash" src="https://github.com/muhammadtrisnazanuar/Week3-Password-Cracking/blob/main/Screenshots_week3_PM2/02_pdf_hash.png" />
